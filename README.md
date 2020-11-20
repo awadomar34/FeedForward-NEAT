@@ -1,12 +1,21 @@
-##
-running the command 'python __init__.py' will run one of the following tests:
+# About
+This project was created for the purpose of learning. Particuarly, to gain insights in to Neuorevolution and to gain an understanding of Deep Learning, in general. If you would like to use NEAT in your own implementation or product, I would recomment [CodeReclaimer's neat-python](https://github.com/CodeReclaimers/neat-python), the offical NEAT library, as it was the inspiration for this project and has fewer scaling isssues and allows for more functionality than this project, such as: evolving RNNs, CTRNNs, built in Node Bias and Response attributes, etc.
 
-XOR test
-Single Pole Balancing test
+## To Test This Project
+Download this project and extract the repo.
+Open the main directory in a terminal (command prompt for Windows users)
+Run the command:
+'''bash
+python __init__.py
+'''
+
+will run one of the following tests: 
+*XOR test
+*Single Pole Balancing test
 
 you can comment/uncomment a the test you would like to run.
 
-##
+## Tests
 From the files in Tests, you can change:
 -the number of times these tests are preformed
 -whether or not the result of each test is written to a file
