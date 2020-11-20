@@ -21,8 +21,8 @@ you can comment/uncomment the test you would like to run.
 
 ## Tests
 From the files in Tests, you can change:
-* The number of times these tests are preformed
-* Whether the result of each test is written to a file
+* The number of times each test is preformed.
+* Whether the result of each test is written to a file.
 
 ## Repo Organization
 In the folder `NEAT`, are the files which implement the NEAT algorithm. 
