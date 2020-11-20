@@ -5,9 +5,9 @@ This project was created for the purpose of learning. Particuarly, to gain insig
 Download this project and extract the repo.
 Open the main directory in a terminal (command prompt for Windows users)
 Run the command:
-'''bash
+```bash
 python __init__.py
-'''
+```
 
 will run one of the following tests: 
 *XOR test
