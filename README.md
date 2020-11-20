@@ -10,8 +10,8 @@ python __init__.py
 ```
 
 will run one of the following tests: 
-Markup: *XOR test
-        *Single Pole Balancing test
+Markup: * XOR test
+        * Single Pole Balancing test
 
 you can comment/uncomment a the test you would like to run.
 
