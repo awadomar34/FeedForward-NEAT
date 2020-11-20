@@ -6,6 +6,10 @@ Download this project and extract the files.
 Open the main directory in a terminal (command prompt for Windows users)
 Run the command:
 ```bash
+python3 __init__.py
+```
+or, for Windows users,
+```bash
 python __init__.py
 ```
 
