@@ -34,7 +34,7 @@ The files are the class files which make feed-forward networks.
 In the folder `Simulations`, are the files which have the test enviroments. 
 Particularly, I implemented the XOR Problem, for debugging and basic testing purposes, and the Single Pole Balancing Problem as a more complicated environment, to test the effects of different configuration parameters and their effects on the runtime of a simulation with randomised data.
 
-### Innovation History
+## Innovation History
 I used a file-based storage system to store genetic innovation history. Particularly, the innovation history of a population is stored in the files 
 `conn_history` and  `node_history`
 
