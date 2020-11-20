@@ -1,8 +1,8 @@
 # About
-This project was created for the purpose of learning. Particuarly, to gain insights in to Neuorevolution and to gain an understanding of Deep Learning, in general. If you would like to use NEAT in your own implementation or product, I would recomment [CodeReclaimer's neat-python](https://github.com/CodeReclaimers/neat-python), the offical NEAT library, as it was the inspiration for this project and has fewer scaling isssues and allows for more functionality than this project, such as: evolving RNNs, CTRNNs, built in Node Bias and Response attributes, etc.
+This project was created for learning and academic purposes. Particularly, to gain deep insights into the field Neuroevolution and to gain an understanding of Deep Learning, in general. If you would like to use a NEAT implementation as part of your own implementation or product, I would recommend [CodeReclaimer's neat-python](https://github.com/CodeReclaimers/neat-python), the offical NEAT library, as it was the inspiration for this project and has fewer scaling isssues and allows for more functionality than this project, such as: evolving RNNs, CTRNNs, built in Node Bias and Response attributes, etc.
 
-## To Test This Project
-Download this project and extract the repo.
+## To Test This Repo
+Download this project and extract the files.
 Open the main directory in a terminal (command prompt for Windows users)
 Run the command:
 ```bash
@@ -10,22 +10,28 @@ python __init__.py
 ```
 
 will run one of the following tests: 
-Markup: * XOR test
-        * Single Pole Balancing test
+* XOR test
+* Single Pole Balancing test
 
-you can comment/uncomment a the test you would like to run.
+you can comment/uncomment the test you would like to run.
 
 ## Tests
 From the files in Tests, you can change:
--the number of times these tests are preformed
--whether or not the result of each test is written to a file
+* The number of times these tests are preformed
+* Whether the result of each test is written to a file
 
-##
-In NEAT, are the files of which run the NEAT algorithm. The files are the class files of Genome, Species and Population.
+## Repo Organization
+In the folder `NEAT`, are the files which implement the NEAT algorithm. 
+The files are for the classes Genome, Species and Population. These are the 3 main levels of abstractions required for NEAT.
 
-In Network, are the files which are used to create phenotypes. The files are the class files which make feed-forward networks.
+In the folder `Network`, are the files which are used to create network phenotypes. 
+The files are the class files which make feed-forward networks.
 
-In Simulations, are the files which have the tests in them. These tests are the XOR problem and the Single Pole Balancing test.
+In the folder `Simulations`, are the files which have the test enviroments. 
+Particularly, I implemented the XOR Problem, for debugging and basic testing purposes, and the Single Pole Balancing Problem as a more complicated environment, to test the effects of different configuration parameters and their effects on the runtime of a simulation with randomised data.
 
-##
-conn_history and node_history are used to store the innovation history of the currently running population
+### Innovation History
+I used a file-based storage system to store genetic innovation history. Particularly, the innovation history of a population is stored in the files 
+`conn_history` and  `node_history`
+
+It is important NOT to run multiple populations at a time as they will share the same files to store innovation history. This will cause the integrity of the populations' innovation histories to be compromised.
